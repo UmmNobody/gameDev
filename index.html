@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="hero">
+    <p class="tagline">Student Portfolio</p>
+
+    <h1 class="typing-container">
+      <span id="typing-text"></span>
+      <span class="cursor">|</span>
+    </h1>
+
+    <p class="description">
+      รวมผลงานจากรายวิชาในรูปแบบเว็บไซต์ สามารถเลือกดูผลงานแต่ละ Lab ได้จากการ์ดด้านล่าง
+    </p>
+  </header>
+
+  <main class="container">
+    <section class="lab-grid">
+
+      <a href="lab01/lab01.html" class="lab-card">
+        <span class="lab-number">LAB 01</span>
+        <h2>ชื่อผลงาน Lab 01</h2>
+        <p>แก้ไขคำอธิบายผลงาน Lab 01 ได้ตรงนี้</p>
+      </a>
+
+      <a href="lab02/lab02.html" class="lab-card">
+        <span class="lab-number">LAB 02</span>
+        <h2>Coming Soon...</h2>
+        <p>No Description</p>
+      </a>
+
+      <a href="lab03/lab03.html" class="lab-card">
+        <span class="lab-number">LAB 03</span>
+        <h2>Coming Soon...</h2>
+        <p>No Description</p>
+      </a>
+
+      <a href="lab04/lab04.html" class="lab-card">
+        <span class="lab-number">LAB 04</span>
+        <h2>Coming Soon...</h2>
+        <p>No Description</p>
+      </a>
+
+      <a href="lab05/lab05.html" class="lab-card">
+        <span class="lab-number">LAB 05</span>
+        <h2>Coming Soon...</h2>
+        <p>No Description</p>
+      </a>
+
+      <a href="lab06/lab06.html" class="lab-card">
+        <span class="lab-number">LAB 06</span>
+        <h2>Coming Soon...</h2>
+        <p>No Description</p>
+      </a>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 My Portfolio | Black & Red Minimal Style</p>
+  </footer>
+
+  <script>
+    const texts = [
+      "Computer Game Development",
+      "Naphat Thongon | 683380073-8 | Sec 1"
+    ];
+
+    const typingText = document.getElementById("typing-text");
+
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      const currentText = texts[textIndex];
+
+      if (!isDeleting) {
+        typingText.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === currentText.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, 1500);
+          return;
+        }
+      } else {
+        typingText.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+          isDeleting = false;
+          textIndex = (textIndex + 1) % texts.length;
+        }
+      }
+
+      const speed = isDeleting ? 50 : 100;
+      setTimeout(typeEffect, speed);
+    }
+
+    typeEffect();
+  </script>
+
+</body>
+</html>
+```
