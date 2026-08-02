@@ -55,11 +55,11 @@ A 2D Shooting Platformer game developed with Godot Engine. Play as a professor r
 
 ### 📷 Preview
 
-![Lab04 Preview](images/lab04_demo1.png)
+<img src="images/lab04_demo1.png" width="500">
 
-![Lab04 Preview](images/lab04_demo2.png)
+<img src="images/lab04_demo2.png" width="500">
 
-![Lab04 Preview](images/lab04_demo3.png)
+<img src="images/lab04_demo3.png" width="500">
 
 ### 🎥 Demo Video
 
