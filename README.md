@@ -47,25 +47,27 @@ This laboratory project will be added soon.
 
 ## 📌 Project Name
 
-**Project Name**
+**Lab 4 2D Platform Side-Scolling**
 
 ### 📝 Description
 
-Write a brief description of the project here.
+A 2D Shooting Platformer game developed with Godot Engine. Play as a professor racing to deliver grades to students before the holiday begins, while battling through challenging levels, avoiding obstacles, and overcoming various platforming challenges.
 
 ### 📷 Preview
 
 ```md
-![Lab04 Preview](images/lab04.png)
+![Lab04 Preview](images/lab04_demo1.png)
+![Lab04 Preview](images/lab04_demo2.png)
+![Lab04 Preview](images/lab04_demo3.png)
 ```
 
 ### 🎥 Demo Video
 
-https://your-demo-video-link
+https://drive.google.com/file/d/11DmFQA_DLQgyaSm_XF60K72grTkxSuDK/view?usp=sharing
 
 ### 🎮 Play Game
 
-https://your-game-link
+https://ummnobody.github.io/gameDev/lab04/lab04.html
 
 ---
 
